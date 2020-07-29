@@ -1,0 +1,109 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #d3dbff;
+}
+.question-project{
+  text-align: center;
+}
+.heading{
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+}
+
+.heading h2{
+    font-family: 'Pacifico', cursive;
+    color:#fecb89;
+    font-size: 30px;
+}
+.question-center{
+  width: 600px;
+  margin: 0 auto;
+}
+.question{
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 1rem 1.5rem 0rem;
+  margin-bottom: 0.7rem;
+}
+.question-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.question-title p{
+  font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    word-spacing:1px;
+}
+.question-title .btn{
+  background-color: transparent;
+  border-color: transparent;
+  color:#fecb89 ;
+ 
+}
+
+.question-text{
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid #777;
+  display:none ;
+}
+.question-text p{
+  padding-bottom: 0;
+  text-align:justify ;
+}
+.question-text{
+  display: none;
+}
+.btn .fa-minus-square{
+  display: none;
+}
+.showtext .question-text{
+  display: block;
+}
+.showtext .fa-minus-square{
+  display:inline;
+}
+.showtext .fa-plus-square{
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 620px){
+
+  .question-center{
+    width: 450px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .question-center{
+      width: 350px;
+    }
+    .question-title p{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 360px)and (min-width:200px) {
+    .question-center{
+      width: 280px;
+    }
+      
+  }
+}
+
+
+
+
